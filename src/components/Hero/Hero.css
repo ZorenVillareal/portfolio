@@ -1,0 +1,69 @@
+/* Hero.css */
+.hero-background {
+  background: linear-gradient(135deg, #2b2b2b, #1f1f1f);
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: #ffffff;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* subtle pattern */
+}
+
+.hero-background .card {
+  background-color: rgba(40, 44, 52, 0.9); /* Dark background with slight transparency */
+  border: none;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.hero-background .card-title,
+.hero-background .card-text {
+  color: #61dafb; /* React.js color for a techie feel */
+}
+
+.hero-background .btn-primary {
+  background-color: #61dafb;
+  border-color: #61dafb;
+  color: #000;
+}
+
+.hero-background .btn-primary:hover {
+  background-color: #4ec0e6;
+  border-color: #4ec0e6;
+}
+
+.rounded-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 250px; /* Optional: control the maximum size of the image */
+  height: auto;
+  border-radius: 50%; /* This makes the image round */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+}
+.hero-img-card {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-img-card .card-body {
+  position: relative;
+}
+
+.hero-img-card .card-body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
+.BgAnimation__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Ensure the SVG background is at the lowest layer */
+}

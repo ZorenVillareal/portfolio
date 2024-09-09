@@ -1,0 +1,25 @@
+/* Navbar.css */
+.navbar-background {
+  background-color: #1f1f1f; /* Same dark background as Hero component */
+  padding: 20px 0;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); /* Slight shadow for elevation */
+}
+
+.navbar-background .nav-link {
+  color: #61dafb; /* React.js blue for link text */
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-background .nav-link:hover {
+  color: #4ec0e6; /* Slightly lighter blue on hover */
+}
+
+.navbar-background .nav-link:disabled {
+  color: #777; /* Grey out disabled links */
+}
+
+.navbar-background .nav-link.active {
+  color: #ffffff; /* White for active link */
+}

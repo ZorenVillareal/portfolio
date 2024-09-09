@@ -1,0 +1,159 @@
+/* Container for the background animation */
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 10vh; /* Full viewport height */
+  padding: 3rem 1rem;
+  position: relative;
+  overflow: hidden; /* Ensure background animation does not overflow */
+}
+
+/* Animated tech background */
+.tech-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e1e1e;
+  overflow: hidden;
+  z-index: -1; /* Place behind other content */
+}
+
+/* Create the animated grid pattern */
+.tech-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0, 188, 212, 0.3) 20%, transparent 20%, transparent 80%, rgba(0, 188, 212, 0.3) 80%);
+  background-size: 60px 60px;
+  animation: backgroundAnimation 15s linear infinite;
+}
+
+/* Keyframes for the background animation */
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Header styling */
+.skills-header {
+  margin-bottom: 2rem;
+  z-index: 1; /* Ensure header is above the background */
+}
+
+.skills-header .card {
+  display: inline-block; /* Shrink to fit content */
+}
+
+.skills-header .card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00bcd4; /* Tech theme accent color */
+}
+
+/* Flexbox container for centering */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1; /* Ensure skills container is above the background */
+}
+
+/* Card styling */
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px; /* Fixed width for cards */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content inside card */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content inside card body */
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #00bcd4; /* Tech theme accent color */
+}
+
+/* Styling for skill items */
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover img {
+  transform: scale(1.15);
+}
+
+.skill-item span {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .skill-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-item span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .skill-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-item span {
+    font-size: 0.875rem;
+  }
+}
