@@ -1,3 +1,5 @@
+// import {DealorNoDeal} from './DealorNoDeal.jpg';
+
 export const Bio = {
   name: "Zoren Villareal",
   roles: [
@@ -100,7 +102,7 @@ export const skills = [
     ],
   },
 ];
-
+//           "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png"
 export const education = [
   {
     id: 0,
@@ -114,14 +116,14 @@ export const education = [
 ];
 
 export const projects = [
+
   {
     id: 9,
     title: "DealorNoDeal",
     date: "May 2024",
     description:
       "Deal or No Deal game I created using only vanilla javascript",
-    image:
-      "src/images/DealorNoDeal.png",
+    image:'../../DealorNoDeal.jpg' ,
     tags: [
       "Javascript",
     ],
@@ -130,18 +132,18 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 9,
+    id: 1,
     title: "Groomies",
     date: "November 2023",
     description:
       "This project has the ability to register and create a profile to be a part of the Groomie network. You can add multiple pets in your profile and edit their profiles. Moving to the Calendar section, make an appointment with your favorite Groomie by giving your appointment a title, select from your pets list, and pick your favorite Groomie! Notice that you can also search the calendar for each Groomie's availability. Finally, you can leave a review regarding the work your Groomie has done.",
     image:
-      "src/images/Groomies.png",
+      "../../Groomies.png",
     tags: [
       "Javascript", "React", "Supabase", "Sass", "Express", "PostgreSQL", "Node js"
     ],
     category: "",
-    github: "https://github.com/jennifermdevine/Groomies",
+    github: "https://github.com/ZorenVillareal/Groomies",
     webapp: "https://groomies-v1.netlify.app/",
   }
 ]
