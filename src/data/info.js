@@ -7,9 +7,9 @@ export const Bio = {
   ],
   description:
     "A recent graduate from UNLV Software Development Bootcamp with a strong passion for coding and problem solving, I am eager find an opportunity that will allow my career transition. During my studies in the UNLV bootcamp, I have acquired a strong foundation with experience in Javascipt, MongoDB, PostgreSQL, Express.js, Node.js and React. I am confident that my blend of prior professional experience, coupled with my genuine passion for software development, positions me to be a valuable asset.",
-  github: "",
+  github: "https://github.com/ZorenVillareal",
   resume:
-    "",
+    "https://drive.google.com/file/d/1YLlwIaXYYWAJFx2jBTixXS4-bhETU42Z/view",
   linkedin: "https://www.linkedin.com/in/zorenvillareal/"
 };
 

@@ -2,6 +2,8 @@ import React from "react";
 import Nav from 'react-bootstrap/Nav';
 import { Link } from "react-scroll";
 import './Navbar.css';
+import { Bio } from "../../data/info";
+import Button from "react-bootstrap/Button";
 
 const Navbar = () => {
   return (
@@ -16,19 +18,15 @@ const Navbar = () => {
             </li>
             <li>
               <Link activeClass="active" smooth spy to="Skills">
-                Skills
+                SKILLS
               </Link>
             </li>
             <li>
               <Link activeClass="active" smooth spy to="Projects">
-                Projects
+                PROJECTS
               </Link>
             </li>
-            <li>
-              <Link activeClass="active" smooth spy to="contact">
-                CONTACT ME
-              </Link>
-            </li>
+
           </ul>
         </nav>
         </header>

@@ -19,7 +19,6 @@ const Hero =()=> {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <section id="about">
-
     <div className="hero-background">
       <div className="container">
         <div className="row d-flex justify-content-center">
@@ -60,7 +59,9 @@ const Hero =()=> {
                   </span>
                   </Card.Text>
                 {/* <Link> */}
-                <Button as={Link} variant="primary" to={Bio.linkedin}>Linkedin</Button>
+                <Button as={Link} variant="primary" to={Bio.linkedin} className="button-spacing">Linkedin</Button>
+<Button href={Bio.resume} target='display' className="button-spacing"> Resume</Button>
+
                 {/* </Link> */}
               </Card.Body>
             </Card>
