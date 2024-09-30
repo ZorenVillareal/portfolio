@@ -122,7 +122,7 @@ export const projects = [
     title: "DealorNoDeal",
     date: "May 2024",
     description:
-      "Deal or No Deal game I created using only vanilla javascript",
+      "Deal or No Deal game I created using only vanilla javascript. Implementing propper algorithm and DOM (Document Object Model) manipulation that mimics the game show Deal or No deal",
     image:'../../DealorNoDeal.jpg' ,
     tags: [
       "Javascript",

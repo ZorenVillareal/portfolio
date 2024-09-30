@@ -2,9 +2,11 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { skills } from '../../data/info'; // Assuming you have a file with skills data
 import './Skills.css'; // Ensure the correct CSS file is imported
-
+// import { Link } from "react-scroll";
 function Skills() {
   return (
+    <section id="Skills">
+
     <div className="skills-section">
       <div className="tech-background"></div> {/* Animated background */}
       <div className="skills-header">
@@ -32,6 +34,7 @@ function Skills() {
         ))}
       </div>
     </div>
+    </section>
   );
 }
 

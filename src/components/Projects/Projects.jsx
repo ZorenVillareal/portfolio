@@ -17,6 +17,8 @@ function Projects() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    <section id="Projects">
+
     <div className="projects-section">
       <div className="projects-header">
         <Card>
@@ -62,6 +64,7 @@ function Projects() {
         ))}
       </div>
     </div>
+    </section>
   );
 }
 
